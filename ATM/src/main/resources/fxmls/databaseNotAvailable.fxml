@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../styles.css" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.atm.controllers.result.DatabaseNotAvailableController">
+   <children>
+      <Label layoutX="60.0" layoutY="117.0" prefWidth="335.0" text="Сервер не может связаться с базой данных." textAlignment="RIGHT" wrapText="true">
+         <font>
+            <Font size="26.0" />
+         </font></Label>
+      <Label layoutX="93.0" layoutY="226.0" text="Может, следует попробовать позже...">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label prefHeight="17.0" prefWidth="600.0" styleClass="title-label" text="Ошибка :(" />
+      <Button layoutX="66.0" layoutY="331.0" mnemonicParsing="false" onAction="#clickReturnToMain" styleClass="bottom-button" text="Вернуться на главный экран" />
+      <ImageView fitHeight="109.0" fitWidth="118.0" layoutX="414.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/thinking.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

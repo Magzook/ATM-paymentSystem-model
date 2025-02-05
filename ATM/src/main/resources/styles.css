@@ -1,0 +1,68 @@
+.root {
+    -fx-background-color: white;
+}
+
+.button {
+    -fx-font-family: Consolas;
+    -fx-background-color: #ff9536;
+    -fx-background-radius: 40;
+    -fx-border-radius: 40;
+}
+.button:hover {
+    -fx-background-color: #ffb96b;
+    -fx-text-fill: white;
+}
+.button:pressed {
+    -fx-scale-x: 0.9;
+    -fx-scale-y: 0.9;
+}
+
+.back-button {
+    -fx-font-size: 20;
+}
+.bottom-button {
+    -fx-font-size: 30;
+}
+
+.welcome-main-button {
+    -fx-font-size: 30;
+}
+
+.welcome-bottom-button {
+    -fx-font-size: 15;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+}
+
+.config-set-button {
+    -fx-font-size: 21;
+}
+
+.config-delete-button {
+    -fx-font-size: 17;
+    -fx-text-fill: #cf0000;
+}
+
+.text-field {
+    -fx-font-size: 20;
+    -fx-font-family: "Comic Sans MS";
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-style: hidden hidden solid hidden;
+}
+
+.sum-text-field {
+    -fx-font-size: 30;
+    -fx-max-width: 220;
+}
+
+.userinfo-label {
+    -fx-font-size: 23;
+    -fx-font-family: "Comic Sans MS";
+}
+
+.title-label {
+    -fx-font-size: 40;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../styles.css" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.atm.controllers.intermediate.ConfigureAccountController">
+   <children>
+      <Label prefHeight="17.0" prefWidth="600.0" styleClass="title-label" text="Настройки аккаунта" />
+      <Label layoutX="18.0" layoutY="52.0" text="Логин:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelLogin" layoutX="98.0" layoutY="52.0" styleClass="userinfo-label" text="&lt;логин&gt;">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="11.0" layoutY="79.0" text="Баланс:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelBalance" layoutX="98.0" layoutY="79.0" styleClass="userinfo-label" text="&lt;баланс&gt;">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="237.0" layoutY="334.0" mnemonicParsing="false" onAction="#clickQuit" styleClass="bottom-button" text="Выйти" />
+      <Button layoutX="460.0" layoutY="116.0" mnemonicParsing="false" onAction="#clickChangeLogin" styleClass="config-set-button" text="Применить">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <Button layoutX="460.0" layoutY="190.0" mnemonicParsing="false" onAction="#clickChangePassword" styleClass="config-set-button" text="Применить">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <Button layoutX="431.0" layoutY="356.0" mnemonicParsing="false" onAction="#clickDeleteAccount" styleClass="config-delete-button" text="Удалить аккаунт" textFill="#d30000">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <Label fx:id="labelLoginSuccess" layoutX="415.0" layoutY="158.0" prefWidth="177.0" text="Новый логин сохранён!" textFill="LIME">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label fx:id="labelPasswordSuccess" layoutX="407.0" layoutY="230.0" text="Новый пароль сохранён!" textFill="LIME">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label fx:id="labelCannotDeleteAccount" layoutX="415.0" layoutY="299.0" prefHeight="55.0" prefWidth="177.0" text="Ваш баланс не пустой. Аккаунт удалить нельзя" textAlignment="RIGHT" textFill="RED" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <VBox alignment="CENTER_RIGHT" layoutX="2.0" layoutY="128.0" prefHeight="124.0" prefWidth="138.0" spacing="40.0">
+         <children>
+            <Label text="Новый логин">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label text="Новый пароль">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label text="Повтор пароля">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="147.0" layoutY="116.0" prefHeight="210.0" prefWidth="312.0">
+         <children>
+            <VBox prefHeight="61.0" prefWidth="232.0">
+               <children>
+                  <TextField fx:id="fieldLogin" maxWidth="1.7976931348623157E308" prefHeight="44.0" promptText="от ? до ? символов" />
+                  <Label fx:id="labelLoginError" text="&lt;ошибка логина&gt;" textFill="RED">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefWidth="196.0">
+               <children>
+                  <PasswordField fx:id="fieldPassword" maxWidth="1.7976931348623157E308" prefHeight="44.0" promptText="от ? символов" />
+                  <Label fx:id="labelPasswordError" text="&lt;ошибка пароля&gt;" textFill="RED">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="61.0" prefWidth="181.0">
+               <children>
+                  <PasswordField fx:id="fieldPasswordRepeat" maxWidth="1.7976931348623157E308" prefHeight="44.0" />
+                  <Label fx:id="labelPasswordsDoNotMatch" text="Пароли не совпадают!" textFill="RED">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</Pane>

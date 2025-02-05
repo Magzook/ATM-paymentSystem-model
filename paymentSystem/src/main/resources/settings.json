@@ -1,0 +1,7 @@
+{
+  "port": 8989,
+  "sessionsInfoFolder": "C:\\Users\\User\\Desktop\\Lore\\5 семестр\\Инжир\\РГР\\Server",
+  "jdbcUrl": "jdbc:postgresql://localhost:5432/payment_system",
+  "jdbcName": "postgres",
+  "jdbcPassword": "password"
+}
